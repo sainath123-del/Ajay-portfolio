@@ -2,4 +2,4 @@
 @import "nav.css";
 @import "main.css";
 @import "./hamburger/style.css";
-
+@import "./components/self-me.css";

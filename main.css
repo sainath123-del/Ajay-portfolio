@@ -1,5 +1,5 @@
 .main-background {
-    background-image: url("../gabriel-garcia-marengo-kOqBCFsGTs8-unsplash.jpg");
+    background-image: url("./kristopher-roller-zepnJQycr4U-unsplash.jpg");
     height: 90vh;
     background-position: left;
     background-size: cover;
@@ -11,7 +11,7 @@
 }
 @media only screen and (max-width:700px)
 {
-main 
+main
 {
  background-position: left;
 }
@@ -20,7 +20,7 @@ main h1{
     margin: 0px;
     color: rgb(160, 86, 86);
     font-size: 70px;
-    color: rgb(91, 131, 146);
+    color: black;
     text-align: center;
 }
 main .title-container {

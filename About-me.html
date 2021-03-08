@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,54 +13,68 @@
     <link rel="stylesheet" href="./Styles.css">
 
 </head>
+
 <body>
-    <h1>About me </h1>
+
     <nav>
         <section class="nav-links">
             <div class="home">
-            <a href="/"> Home </a>
-            <a href="About-me.html"> About me </a>
+                <a href="/">Home</a>
+                <a href="About-me.html"> About me </a>
             </div>
             <div class="blog-projects">
-            <a href="projects.html"> projects</a>
-            <a href="blog.html"> Blog</a>
+                <a href="projects.html"> projects</a>
+                <a href="blog.html"> Blog</a>
             </div>
         </section>
         <section class="social-links">
             <a href="https://www.linkedin.com/in/sainath-biradar-7139241a9/">linkedin</a>
             <a href="https://github.com/sainath123-del">Github</a>
         </section>
-        <button class="hamburger hamburger--elastic button-outline" type="button">
+        <button class="hamburger hamburger--squeezes button-outline" type="button">
             <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
             </span>
         </button>
     </nav>
     <ul class="hamburger-links">
-        <li><a href="">Projects</a></li>
-        <li><a href="">blog</a></li>
-        <li><a href="">linkedin</a></li>
-        <li><a href="">Github</a></li>
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="/blog.html">blog</a></li>
+        <li><a href="https://www.linkedin.com/in/sainath-biradar-7139241a9/">linkedin</a></li>
+        <li><a href="https://github.com/sainath123-del">Github</a></li>
 
-      </ul>
-      <main>
-          <div class="profile-picture-container "></div>
-          <img src="./IMG_0741.jpg" alt="Profile Picture">
-          <div class="Discription"></div>
-      </main>
-      <script>
+    </ul>
+    <style>
+        img {
+            width: 23%;
+            height: auto;
+
+        }
+    </style>
+    <main class="about-me-container">
+        <div class="profile-picture-container "></div>
+        <img src="./IMG_0741.jpg" alt="Profile Picture">
+        <div class="Discription"></div>
+        <p>My self Sainath Biradar, I am a student at coder academy.!</p>
+        
+
+
+
+    </main>
+    <script>
         const hamburger = document.querySelector('.hamburger')
         const links = document.querySelector('.hamburger-links')
         hamburger.addEventListener('click', function () {
-          hamburger.classList.toggle('is-active')
-          const isActive = hamburger.classList.contains('is-active')
-          if (isActive) {
-            links.style.display = 'block'
-          } else {
-            links.style.display = 'none'
-          }
+            hamburger.classList.toggle('is-active')
+            const isActive = hamburger.classList.contains('is-active')
+            if (isActive) {
+                links.style.display = 'block'
+            } else {
+                links.style.display = 'none'
+            }
         })
-      </script>
+    </script>
 
 </body>
+
 </html>

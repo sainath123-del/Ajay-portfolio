@@ -10,12 +10,12 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    font-weight: 1100;
+    
     font-family: 'Times New Roman', Times, serif;
-    margin: 5px, 5px;
+    margin: 0px, 5px;
 }
-nav a:hover{
-    border-bottom: 1px,solid rgb(153, 73, 73);
+.nav-links a:hover{
+    border-bottom: 1px, solid rgb(153, 73, 73);
 }
 .nav-links
 {
@@ -50,6 +50,9 @@ nav a:hover{
         display: block;
     }
 }
+.hamburger-links{
+    display: none;
+}
 .hamburger-links {
     display: none;
     background: transparent;
@@ -64,7 +67,7 @@ nav a:hover{
 }
 .hamburger-links li {
     text-align: center;
-    /* margin: 10px,0px; */
+    margin: 10px,0px;
 
 }
 .hamburger-links li a{

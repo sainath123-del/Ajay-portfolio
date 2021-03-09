@@ -3,3 +3,7 @@
 @import "main.css";
 @import "./hamburger/style.css";
 @import "./components/self-me.css";
+@import "./hamburger/about-me.css";
+@import "./components/globsl.css";
+@import "./components/projects.css";
+@import "./components/blog.css";

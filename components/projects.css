@@ -1,0 +1,38 @@
+.project-container h1{
+    color: black; 
+    align-self: flex-start; 
+    margin: 10px;
+
+
+}
+
+.project {
+height: 250px;
+display: flex;
+font-size: 100%;
+margin: 20px;
+}
+ 
+.project img{
+    height: 100%;
+    margin: 2%;
+
+
+}
+
+.project-description{
+    display: flex;
+    align-items: center;
+
+}
+@media only screen and ( max-width: 700px){
+
+
+.project{
+flex-direction: column;
+height: auto;
+width: 90%;
+
+}
+}
+

@@ -1,0 +1,87 @@
+
+@import "../components/font.css";
+.logger{
+    background: white;
+    padding: 0rem;
+    height: 0rem;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.toggle-collapase{
+    position: absolute;
+    top:0%;
+    width:90%;
+    cursor:pointer;
+    display: none;
+}
+.toggle-icons{
+    display: flex;
+    justify-content: center;
+    padding: 1.7rem 0;
+}
+.logger-brand a{
+    font-size: 1.0rem;
+    padding: 1rem 0;
+    display: block;
+    font-size: 30px;
+}
+.logger
+.flex-row{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+
+}
+.logger-menu{
+    justify-content: space-between;
+    display: flex;
+    
+}
+ .logger-link{
+    padding: 1.6rem;
+    font-size: 1.1rem;
+    position: relative;
+    
+}
+.logger-items{
+    
+    display: flex;
+    margin: 0;
+}
+ul{
+    list-style-type: none;
+}
+.social {
+padding: 2%;
+}
+.logger-link:hover{
+    background-color:black;
+}
+.logger-link:hover a{
+    color:cadetblue;
+}
+.social i{
+    padding: 0%
+}
+.social i{
+    color: blue;
+}
+.social:hover i{
+    color: gray;
+}
+@media only screen and (max-width:500px)
+{
+    .logger-items{
+        flex-direction: column;
+    }
+    .toggle-collapase{
+        display:initial;
+    }
+}
+/* main {
+background-image: url(../michael-schofield-ZGvA0M4TI2Y-unsplash.jpg);
+background-size:cover;
+height: 110vh;
+display: flex;
+} */

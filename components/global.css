@@ -1,0 +1,17 @@
+body {
+    margin: 0px;
+    font-family: 'lora', serif;
+    color: black;
+
+}
+h1,h2{
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+    max-width: 900px;
+    margin: 0 auto;
+}

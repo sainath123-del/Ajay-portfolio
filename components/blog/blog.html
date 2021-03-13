@@ -1,75 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bloger</title>
-    <script src="https://kit.fontawesome.com/bf4f3e5d06.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../blog.css">
-    <!-- <link rel="stylesheet" href="../all.css"> -->
+    <title>My profile </title>
+  <link rel="stylesheet" href="../../Styles.css">
 
-    
 </head>
-
 <body>
-    
-        <nav class="logger">
-            <div class="logger-menu flex-row">
-                <div class="logger-brand">
-                    <a href="#" class="text-gray">Blogger</a>
-                </div>
-                <div class="toggle-collapse">
-                    <div class="toggle-icons">
-                     <i class="fas fa-bars"></i>   
+    <nav>
+        <section class="nav-links">
+            <div class="home">
+                <a href="/">Home</a>
+                <a href="About-me.html"> About me </a>
+            </div>
+            <div class="blog-projects">
+                <a href="projects.html"> projects</a>
+                <a href="./"> Blog</a>
+            </div>
+        </section>
+        <section class="social-links">
+            <a href="https://www.linkedin.com/in/sainath-biradar-7139241a9/">linkedin</a>
+            <a href="https://github.com/sainath123-del">Github</a>
+        </section>
+        <button class="hamburger hamburger--squeezes button-outline" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </nav>
+    <ul class="hamburger-links">
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="/blog.html">blog</a></li>
+        <li><a href="https://www.linkedin.com/in/sainath-biradar-7139241a9/">linkedin</a></li>
+        <li><a href="https://github.com/sainath123-del">Github</a></li>
 
-                    </div>
-                </div>
-
-                <div>
-                    <ul class="logger-items">
-                        <li class="logger-link">
-                            <a href="#">home</a>
-                        </li>
-                        <li class="logger-link">
-                            <a href="#">category</a>
-                        </li>
-                        <li class="logger-link">
-                            <a href="#">Archive</a>
-                        </li>
-                        <li class="logger-link">
-                            <a href="#">pages</a>
-                        </li>
-                        <li class="logger-link">
-                            <a href="#">contacts</a>
-                        </li>
-                    </ul>
-                </div>
-              
-
-                <div class="social text-gray">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-Tweter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-Github"></i></a>
-                </div>
-        </nav>
+    </ul> 
+    <div class="project">
+        <img src="../../115.jpg" alt="blog "> </div>
+        <div class="project-description1">
+            <h2>My first blog</h2>
+        <p> This is a second blog </p>
+        </div>
+    </div>
         
-         
+        <div class="project">
+          <img src="../../113.jpg" alt="blog "> </div>
+          <div class="project-description2">
+              <h2>My second blog </h2>
+          <p> This is a first blog </p>
+          </div>
+        
+          <div class="project">
+              <img src="../../114.jpg" alt="blog "> </div>
+              <div class="project-description3">
+              <h2> My third blog </h2>
+              <p>This is a third blog</p>
 
-<main>
-         
-       <section class="site-title">
-           <div class="site-background">
-               <h1> Sunset</h1>
-               <h3>ama</h3>
-               <button class="btn">explore</button>
-           </div>
-       </section>
-</main> 
+          
+          </div>
+          <div class="project">
+              <img src="../../111.jpg" alt="blog"> </div>
+              <div class="project-description4">
+                  <h2> My fourth blog</h2>
+                  <p>This is my fourth blog</p>
+              </div>
+          
+          
+          
 
-</body>
 
+   
+          
+   </body>
+    <script>
+        const hamburger = document.querySelector('.hamburger')
+        const links = document.querySelector('.hamburger-links')
+        hamburger.addEventListener('click', function () {
+            hamburger.classList.toggle('is-active')
+            const isActive = hamburger.classList.contains('is-active')
+            if (isActive) {
+                links.style.display = 'block'
+            } else {
+                links.style.display = 'none'
+            }
+        })
+    </script>
 </html>

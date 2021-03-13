@@ -1,0 +1,8 @@
+nav {
+    height: 80px;
+    background: black;
+}
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+}

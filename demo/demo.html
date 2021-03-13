@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="./Styles.css">
+
+
+</head>
+
+<body>
+    <nav>
+        <section class="nav-links">
+            <div class="home">
+                
+                <a href="index.html"> Home </a>
+                <a href="./About-me.html"> About me </a>
+            </div>
+            <div class="blog-projects">
+                <a href="./projects.html"> projects</a>
+                <a href="/components/blog/blog.html"> Blog</a>
+            </div>
+        </section>
+        <section class="social-links">
+            <a href="https://www.linkedin.com/in/sainath-biradar-7139241a9/">linkedin</a>
+            <a href="https://github.com/sainath123-del">Github</a>
+        </section>
+        <button class="hamburger hamburger--squeezes button-outline" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </nav>
+     <ul class="hamburger-links">
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="./">blog</a></li>
+        <li><a href="https://www.linkedin.com/in/sainath-biradar-7139241a9/">linkedin</a></li>
+        <li><a href="https://github.com/sainath123-del">Github</a></li>
+    </ul>
+        <main class="main-background">
+            <div class="title-container">
+                <h1>Ajay Biradar</h1>
+                <h2>Software Engineer</h2>
+                <!-- <h3>Email-id:Saianthbiradar2@gmail.com</h3> -->
+            </div>
+        </main>
+        <script>
+            const hamburger = document.querySelector('.hamburger')
+            const links = document.querySelector('.hamburger-links')
+            hamburger.addEventListener('click', function () {
+                hamburger.classList.toggle('is-active')
+                const isActive = hamburger.classList.contains('is-active')
+                if (isActive) {
+                    links.style.display = 'block'
+                } else {
+                    links.style.display = 'none'
+                }
+            })
+        </script>
+</body>
+</htm>
